@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Recompensa_ES</name>
+    <events>
+        <variable constant="0" name="TotalEstrela" sid="634563940814003" static="0" type="number">0</variable>
+        <event-block sid="520484211222606">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="133421058269770" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="432524488798669" type="System">
+                    <param id="0" name="Variable">TotalEstrela</param>
+                    <param id="1" name="Value">EstrelaFase1 + EstrelaFase2 + EstrelaFase3 + EstrelaFase4 + EstrelaFase5</param>
+                </action>
+                <action id="0" name="Set text" sid="184946878346508" type="i2">
+                    <param id="0" name="Text">TotalEstrela &amp; &quot; / 15&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="731211741347246">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="652543557158698" type="System">
+                    <param id="0" name="Variable">Recompensa</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">456789123</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="449337494751421" type="tamp">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="178433134476316">
+            <conditions>
+                <condition id="3" name="On touched object" sid="475050416872246" type="Touch">
+                    <param id="0" name="Object">bt_home_func</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="634023667205198" type="System">
+                    <param id="0" name="Layout">Tela_Fases</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

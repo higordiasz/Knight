@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Loja_ES</name>
+    <events>
+        <variable constant="0" name="Nivel_Compra1" sid="407087038426685" static="0" type="number">0</variable>
+        <variable constant="0" name="Nivel_Compra2" sid="661771756486866" static="0" type="number">0</variable>
+        <variable constant="0" name="Nivel_Compra3" sid="423732959717123" static="0" type="number">0</variable>
+        <variable constant="0" name="Valor_Compra1_Nivel1" sid="785711176143546" static="0" type="number">100</variable>
+        <variable constant="0" name="Valor_Compra1_Nivel2" sid="996085727027841" static="0" type="number">200</variable>
+        <variable constant="0" name="Valor_Compra1_Nivel3" sid="224546937033843" static="0" type="number">350</variable>
+        <variable constant="0" name="Valor_Compra1_Nivel4" sid="267897064693762" static="0" type="number">700</variable>
+        <variable constant="0" name="Valor_Compra1_Nivel5" sid="340608218802373" static="0" type="number">5000</variable>
+        <variable constant="0" name="Valor_Compra2_Nivel1" sid="170808267898442" static="0" type="number">150</variable>
+        <variable constant="0" name="Valor_Compra2_Nivel2" sid="391871120169079" static="0" type="number">300</variable>
+        <variable constant="0" name="Valor_Compra2_Nivel3" sid="980346366121253" static="0" type="number">500</variable>
+        <variable constant="0" name="Valor_Compra2_Nivel4" sid="638372032410210" static="0" type="number">1200</variable>
+        <variable constant="0" name="Valor_Compra2_Nivel5" sid="525336710278191" static="0" type="number">5000</variable>
+        <variable constant="0" name="Valor_Compra3_Nivel1" sid="146129643068571" static="0" type="number">30</variable>
+        <event-group description="" sid="795371497995363" title="Loja">
+            <sub-events>
+                <event-group description="" sid="105061165344213" title="Botões Loja">
+                    <sub-events>
+                        <event-block sid="249405992590954">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="644586288245105" type="Touch">
+                                    <param id="0" name="Object">bt_home_loja</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="631366453326570" type="System">
+                                    <param id="0" name="Layout">Tela_Fases</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="543236200864271">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="403850540182966" type="Touch">
+                                    <param id="0" name="Object">bt_creditos_loja</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="836206655380243" type="System">
+                                    <param id="0" name="Layout">Tela_Fases</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="135604554686951">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="278210514615603" type="Touch">
+                                    <param id="0" name="Object">bt_prox_loja</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="188841601564649" type="System">
+                                    <param id="0" name="Layout">&quot;FASE_&quot; &amp; Fase_Atual</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="792790920034710" title="Moedas e Rubis - Quantidade">
+                    <sub-events>
+                        <event-block sid="222871032380693">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="927820868607124" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="253008560662461" type="moedas">
+                                    <param id="0" name="Text">Moedas</param>
+                                </action>
+                                <action id="0" name="Set text" sid="760872932595548" type="rubiloja">
+                                    <param id="0" name="Text">Rubis</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="365965729615906" title="Itens da Loja">
+                    <sub-events>
+                        <event-group description="" sid="291011555456802" title="Item 1">
+                            <sub-events>
+                                <event-group description="" sid="108720929240591" title="Compra Item1">
+                                    <sub-events>
+                                        <event-block sid="116369265349860">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="335750168846405" type="Touch">
+                                                    <param id="0" name="Object">bt_compra1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="690183398499131" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="535764068914573" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra1_Nivel1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="214054030490462" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra1_Nivel1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="847270057570252" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="561829679450464" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="605441028961808" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="194245780673333" type="Save">
+                                                    <param id="0" name="Key">&quot;C1&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="291021998258902">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="888364175227977" type="Touch">
+                                                    <param id="0" name="Object">bt_compra1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="128803787955775" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="819323452053850" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra1_Nivel2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="921192388214869" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra1_Nivel2</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="330496420439719" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="355601728070617" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="363571031019441" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="515759023374203" type="Save">
+                                                    <param id="0" name="Key">&quot;C1&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="776478330527023">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="305730841517319" type="Touch">
+                                                    <param id="0" name="Object">bt_compra1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="517881612616036" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="567003027442134" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra1_Nivel3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="348138604366985" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra1_Nivel3</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="704607762055057" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="951823266969298" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="319725379524124" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Value">3</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="258374894831203" type="Save">
+                                                    <param id="0" name="Key">&quot;C1&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="635647594623502">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="787152096945905" type="Touch">
+                                                    <param id="0" name="Object">bt_compra1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="400557290497553" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="241700985406776" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra1_Nivel4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="112488500507262" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra1_Nivel4</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="829884045589009" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="989612916303249" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="609952525239764" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Value">4</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="358505416084608" type="Save">
+                                                    <param id="0" name="Key">&quot;C1&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="749796053048438">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="863010937385745" type="Touch">
+                                                    <param id="0" name="Object">bt_compra1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="183243051978044" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="760113157862476" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra1_Nivel5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="415764538887322" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra1_Nivel5</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="496038027282279" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="489103170439336" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="944979919273525" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="846137989481917" type="Save">
+                                                    <param id="0" name="Key">&quot;C1&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="646109790416153" title="Valor Texto Item1">
+                                    <sub-events>
+                                        <event-block sid="506860206299912">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="768882273583459" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="812264605769377" type="compra1">
+                                                    <param id="0" name="Text">Valor_Compra1_Nivel1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="541075674062196">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="916114138055601" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="846809533356548" type="compra1">
+                                                    <param id="0" name="Text">Valor_Compra1_Nivel2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="626409113171302">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="623226481938199" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="467125079102289" type="compra1">
+                                                    <param id="0" name="Text">Valor_Compra1_Nivel3</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="669768427890444">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="812271125209537" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="487025505686195" type="compra1">
+                                                    <param id="0" name="Text">Valor_Compra1_Nivel4</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="592592506467688">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="342796600522116" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="437474513484599" type="compra1">
+                                                    <param id="0" name="Text">Valor_Compra1_Nivel5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="768059268439648">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="447347171315489" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="689906104568629" type="compra1">
+                                                    <param id="0" name="Text">&quot;----&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="893052052656291" title="Item 2">
+                            <sub-events>
+                                <event-group description="" sid="833958669127277" title="Compra Item2">
+                                    <sub-events>
+                                        <event-block sid="156527571591234">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="140785145015878" type="Touch">
+                                                    <param id="0" name="Object">bt_compra2</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="578965152028618" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="774476997389777" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra2_Nivel1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="355824632752660" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra2_Nivel1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="575472231971281" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="209849452747553" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="191584375932420" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="116924747520016" type="Save">
+                                                    <param id="0" name="Key">&quot;C2&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="570526133568893">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="356560625910750" type="Touch">
+                                                    <param id="0" name="Object">bt_compra2</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="204546662182111" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="682880154007072" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra2_Nivel2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="403459487310994" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra2_Nivel2</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="422590230894994" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="719058381692018" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="464611554890874" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="176261597315534" type="Save">
+                                                    <param id="0" name="Key">&quot;C2&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="109749652140492">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="243331853286860" type="Touch">
+                                                    <param id="0" name="Object">bt_compra2</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="530104827011324" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="593201417675633" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra2_Nivel3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="975872289052263" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra2_Nivel3</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="120005926051044" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="519010260486085" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="618397049348986" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Value">3</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="551455457371950" type="Save">
+                                                    <param id="0" name="Key">&quot;C2&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="216429756238543">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="465737027163609" type="Touch">
+                                                    <param id="0" name="Object">bt_compra2</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="366696744250242" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="823857847087896" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra2_Nivel4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="643104107095636" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra2_Nivel4</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="564730785637540" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="882401996026336" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="160696763110920" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Value">4</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="823063406414409" type="Save">
+                                                    <param id="0" name="Key">&quot;C2&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="439613211177554">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="287189945817621" type="Touch">
+                                                    <param id="0" name="Object">bt_compra2</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="497676521218569" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="424811162912309" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra2_Nivel5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="527701758234045" type="System">
+                                                    <param id="0" name="Variable">Moedas</param>
+                                                    <param id="1" name="Value">Valor_Compra2_Nivel5</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="101610556771077" type="moedas">
+                                                    <param id="0" name="Text">Moedas</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="860613059223198" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="868804838862629" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="886934713772212" type="Save">
+                                                    <param id="0" name="Key">&quot;C2&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="497338696522098" title="Valor Texto Item2">
+                                    <sub-events>
+                                        <event-block sid="158547705178899">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="346162029523320" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="871593702256867" type="compra2">
+                                                    <param id="0" name="Text">Valor_Compra2_Nivel1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="401827729961046">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="831463487006496" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="889291534843003" type="compra2">
+                                                    <param id="0" name="Text">Valor_Compra2_Nivel2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="994492009523407">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="573170582968745" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="328646288981643" type="compra2">
+                                                    <param id="0" name="Text">Valor_Compra2_Nivel3</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="910277370719498">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="459914165802813" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="316350040289945" type="compra2">
+                                                    <param id="0" name="Text">Valor_Compra2_Nivel4</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="534327005611077">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="812879698427644" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="716647279359130" type="compra2">
+                                                    <param id="0" name="Text">Valor_Compra2_Nivel5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="927751786744580">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="855325668952495" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="899875916742581" type="compra2">
+                                                    <param id="0" name="Text">&quot;----&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="382405912850684" title="Item 3">
+                            <sub-events>
+                                <event-group description="" sid="865368347834550" title="Compra Item3">
+                                    <sub-events>
+                                        <event-block sid="707464547583971">
+                                            <conditions>
+                                                <condition id="3" name="On touched object" sid="382278973037788" type="Touch">
+                                                    <param id="0" name="Object">bt_compra3</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="402931959573304" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra3</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="396471791288614" type="System">
+                                                    <param id="0" name="Variable">Rubis</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">Valor_Compra3_Nivel1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="645432482114783" type="System">
+                                                    <param id="0" name="Variable">Rubis</param>
+                                                    <param id="1" name="Value">Valor_Compra3_Nivel1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="675258365173511" type="rubiloja">
+                                                    <param id="0" name="Text">Rubis</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="909956771889766" type="System">
+                                                    <param id="0" name="Seconds">0.2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="842156587496838" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra3</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Set item" sid="919066882876883" type="Save">
+                                                    <param id="0" name="Key">&quot;C3&quot;</param>
+                                                    <param id="1" name="Value">Nivel_Compra3</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="321199333333847" title="Valor Texto Item3">
+                                    <sub-events>
+                                        <event-block sid="753648352560110">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="986003412002571" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra3</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="327089982532531" type="compra3">
+                                                    <param id="0" name="Text">Valor_Compra3_Nivel1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="265985162553246">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="793305343271717" type="System">
+                                                    <param id="0" name="Variable">Nivel_Compra3</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="906200325000301" type="compra3">
+                                                    <param id="0" name="Text">&quot;----&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

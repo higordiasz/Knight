@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">FASE_1</layout>
+        <event-sheet active="1" order="2">FASES_ES</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/a1/" />
+        <folder expanded="1" path="animation-folder/a2/" />
+        <folder expanded="1" path="animation-folder/a3/" />
+        <folder expanded="1" path="animation-folder/a4/" />
+        <folder expanded="1" path="animation-folder/a5/" />
+        <folder expanded="1" path="animation-folder/a6/" />
+        <folder expanded="1" path="animation-folder/a7/" />
+        <folder expanded="1" path="animation-folder/a8/" />
+        <folder expanded="1" path="animation-folder/a9/" />
+        <folder expanded="1" path="animation-folder/b1/" />
+        <folder expanded="1" path="animation-folder/b2/" />
+        <folder expanded="1" path="animation-folder/b3/" />
+        <folder expanded="1" path="animation-folder/b4/" />
+        <folder expanded="1" path="animation-folder/b5/" />
+        <folder expanded="1" path="animation-folder/b6/" />
+        <folder expanded="1" path="animation-folder/b7/" />
+        <folder expanded="1" path="animation-folder/b8/" />
+        <folder expanded="1" path="animation-folder/b9/" />
+        <folder expanded="1" path="animation-folder/solid/" />
+        <folder expanded="1" path="animation-folder/plataforma/" />
+        <folder expanded="1" path="animation-folder/c1/" />
+        <folder expanded="1" path="animation-folder/c2/" />
+        <folder expanded="1" path="animation-folder/c3/" />
+        <folder expanded="1" path="animation-folder/c4/" />
+        <folder expanded="1" path="animation-folder/c5/" />
+        <folder expanded="1" path="animation-folder/c6/" />
+        <folder expanded="1" path="animation-folder/c7/" />
+        <folder expanded="1" path="animation-folder/c8/" />
+        <folder expanded="1" path="animation-folder/c9/" />
+        <folder expanded="1" path="animation-folder/d1/" />
+        <folder expanded="1" path="animation-folder/d2/" />
+        <folder expanded="1" path="animation-folder/d3/" />
+        <folder expanded="1" path="animation-folder/d4/" />
+        <folder expanded="1" path="animation-folder/d5/" />
+        <folder expanded="1" path="animation-folder/dead/" />
+        <folder expanded="1" path="animation-folder/win1/" />
+        <folder expanded="1" path="animation-folder/f1/" />
+        <folder expanded="1" path="animation-folder/bt1/" />
+        <folder expanded="1" path="animation-folder/bt2/" />
+        <folder expanded="1" path="animation-folder/bt3/" />
+        <folder expanded="1" path="animation-folder/bt4/" />
+        <folder expanded="1" path="animation-folder/bt5/" />
+        <folder expanded="1" path="animation-folder/estrela_apagada/" />
+        <folder expanded="1" path="animation-folder/f2/" />
+        <folder expanded="1" path="animation-folder/bt6/" />
+        <folder expanded="1" path="animation-folder/bt7/" />
+        <folder expanded="1" path="animation-folder/bt8/" />
+        <folder expanded="1" path="animation-folder/bt9/" />
+        <folder expanded="1" path="animation-folder/bt10/" />
+        <folder expanded="1" path="animation-folder/bt_home/" />
+        <folder expanded="1" path="animation-folder/bt_loja/" />
+        <folder expanded="1" path="animation-folder/bt_proximo/" />
+        <folder expanded="1" path="animation-folder/bt_anterior/" />
+        <folder expanded="1" path="animation-folder/bt_creditos/" />
+        <folder expanded="1" path="animation-folder/bt_home_func/" />
+        <folder expanded="1" path="animation-folder/bt_anterior_func/" />
+        <folder expanded="1" path="animation-folder/bt_loja_func/" />
+        <folder expanded="1" path="animation-folder/bt_creditos_func/" />
+        <folder expanded="1" path="animation-folder/bt_proximo_func/" />
+        <folder expanded="1" path="animation-folder/fase1_func/" />
+        <folder expanded="1" path="animation-folder/Fase2_func/" />
+        <folder expanded="1" path="animation-folder/fase3_func/" />
+        <folder expanded="1" path="animation-folder/fase4_func/" />
+        <folder expanded="1" path="animation-folder/fase5_func/" />
+        <folder expanded="1" path="animation-folder/fase6_func/" />
+        <folder expanded="1" path="animation-folder/fase7_func/" />
+        <folder expanded="1" path="animation-folder/fase8_func/" />
+        <folder expanded="1" path="animation-folder/fase9_func/" />
+        <folder expanded="1" path="animation-folder/fase10_func/" />
+        <folder expanded="1" path="animation-folder/m1/" />
+        <folder expanded="1" path="animation-folder/sucess/" />
+        <folder expanded="1" path="animation-folder/failure/" />
+        <folder expanded="1" path="animation-folder/estrela1/" />
+        <folder expanded="1" path="animation-folder/estrela2/" />
+        <folder expanded="1" path="animation-folder/estrela3/" />
+        <folder expanded="1" path="animation-folder/m2/" />
+        <folder expanded="1" path="animation-folder/m3/" />
+        <folder expanded="1" path="animation-folder/m7/" />
+        <folder expanded="1" path="animation-folder/m8/" />
+        <folder expanded="1" path="animation-folder/m9/" />
+        <folder expanded="1" path="animation-folder/n1/" />
+        <folder expanded="1" path="animation-folder/n2/" />
+        <folder expanded="1" path="animation-folder/seta_direita/" />
+        <folder expanded="1" path="animation-folder/seta_esquerda/" />
+        <folder expanded="1" path="animation-folder/seta_cima/" />
+        <folder expanded="1" path="animation-folder/moeda/" />
+        <folder expanded="1" path="animation-folder/rubi/" />
+        <folder expanded="1" path="animation-folder/plataforma1/" />
+        <folder expanded="1" path="animation-folder/l1/" />
+        <folder expanded="1" path="animation-folder/l2/" />
+        <folder expanded="1" path="animation-folder/l3/" />
+        <folder expanded="1" path="animation-folder/l4/" />
+        <folder expanded="1" path="animation-folder/l5/" />
+        <folder expanded="1" path="animation-folder/l6/" />
+        <folder expanded="1" path="animation-folder/bt__compra1/" />
+        <folder expanded="1" path="animation-folder/bt__compra2/" />
+        <folder expanded="1" path="animation-folder/bt__compra3/" />
+        <folder expanded="1" path="animation-folder/l7/" />
+        <folder expanded="1" path="animation-folder/l8/" />
+        <folder expanded="1" path="animation-folder/l9/" />
+        <folder expanded="1" path="animation-folder/bt_compra1/" />
+        <folder expanded="1" path="animation-folder/bt_compra2/" />
+        <folder expanded="1" path="animation-folder/bt_compra3/" />
+        <folder expanded="1" path="animation-folder/bt_home_loja/" />
+        <folder expanded="1" path="animation-folder/bt_prox_loja/" />
+        <folder expanded="1" path="animation-folder/bt_creditos_loja/" />
+        <folder expanded="1" path="animation-folder/espinho/" />
+        <folder expanded="1" path="animation-folder/bt_start/" />
+        <folder expanded="1" path="animation-folder/bt_start_func/" />
+        <folder expanded="1" path="animation-folder/AP_Pulo/" />
+        <folder expanded="1" path="animation-folder/AP_Stop/" />
+        <folder expanded="1" path="animation-folder/bt_pause/" />
+        <folder expanded="1" path="animation-folder/baraaa/" />
+        <folder expanded="1" path="animation-folder/bt_restart/" />
+        <folder expanded="1" path="animation-folder/a_parte1/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/a2_1/" />
+        <folder expanded="1" path="animation-folder/a5_2/" />
+        <folder expanded="1" path="animation-folder/a2_2/" />
+        <folder expanded="1" path="animation-folder/a1_1/" />
+        <folder expanded="1" path="animation-folder/a3_1/" />
+        <folder expanded="1" path="animation-folder/a4_1/" />
+        <folder expanded="1" path="animation-folder/a6_1/" />
+        <folder expanded="1" path="animation-folder/caverna_visible/" />
+        <folder expanded="1" path="animation-folder/caverna_leave/" />
+        <folder expanded="1" path="animation-folder/fogo_teste/" />
+        <folder expanded="1" path="animation-folder/a1_2/" />
+        <folder expanded="1" path="animation-folder/a7_1/" />
+        <folder expanded="1" path="animation-folder/a11/" />
+        <folder expanded="1" path="animation-folder/a11_1/" />
+        <folder expanded="1" path="animation-folder/a11_2/" />
+        <folder expanded="1" path="animation-folder/a6_2/" />
+        <folder expanded="1" path="animation-folder/tamp/" />
+        <folder expanded="1" path="animation-folder/plataforma2/" />
+        <folder expanded="1" path="animation-folder/goblin01/" />
+        <folder expanded="1" path="animation-folder/direita/" />
+        <folder expanded="1" path="animation-folder/esquerda/" />
+        <folder expanded="1" path="animation-folder/GoblinAtaque/" />
+        <folder expanded="1" path="animation-folder/GoblinAtaque2/" />
+        <folder expanded="1" path="animation-folder/PlayerAtaque/" />
+        <folder expanded="1" path="animation-folder/PlayerAnim/" />
+        <folder expanded="1" path="animation-folder/fireball/" />
+        <folder expanded="1" path="animation-folder/Dash/" />
+    </folders-expanded>
+</c2uistate>

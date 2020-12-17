@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Tela_Fases_ES</name>
+    <events>
+        <variable constant="0" name="Recompensa" sid="303797133227189" static="0" type="number">0</variable>
+        <comment>Fase concluida (0 = Ainda nao; 1 = Concluida)</comment>
+        <variable constant="0" name="Fase1" sid="375784529098547" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase2" sid="437021799770997" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase3" sid="656211627616104" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase4" sid="210454377797068" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase5" sid="816579613675840" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase6" sid="689629119197574" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase7" sid="637120438428150" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase8" sid="808811019020313" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase9" sid="765937146066396" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase10" sid="491083780232858" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase11" sid="877460222775638" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase12" sid="524115967405744" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase13" sid="726863287542263" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase14" sid="436306187902635" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase15" sid="351600879313697" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase16" sid="999283530883613" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase17" sid="554091607384695" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase18" sid="308238241064141" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase19" sid="183071376427972" static="0" type="number">0</variable>
+        <variable constant="0" name="Fase20" sid="776244642487248" static="0" type="number">0</variable>
+        <comment>Numero de Estrelas conquistadas em cada fase</comment>
+        <variable constant="0" name="EstrelaFase1" sid="941055182091040" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase2" sid="639315195138366" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase3" sid="270753382006872" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase4" sid="610732528866989" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase5" sid="782563095981589" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase6" sid="643961779821182" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase7" sid="220770143178367" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase8" sid="423974831847421" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase9" sid="837062265272577" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase10" sid="438647376801033" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase11" sid="663947986141393" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase12" sid="603774180498796" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase13" sid="483359633472791" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase14" sid="749322666642526" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase15" sid="147070172527140" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase16" sid="476219783267199" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase17" sid="293988252900834" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase18" sid="128458054041687" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase19" sid="121320973594914" static="0" type="number">0</variable>
+        <variable constant="0" name="EstrelaFase20" sid="453141645674357" static="0" type="number">0</variable>
+        <comment>Fase Atual</comment>
+        <variable constant="0" name="Fase_Atual" sid="380982858294302" static="0" type="number">5</variable>
+        <event-group description="" sid="639801390120906" title="Start Layout Events">
+            <sub-events>
+                <event-block sid="439520538323827">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="279446577766340" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="750921362312234" type="moedas">
+                            <param id="0" name="Text">Moedas</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="683676552668794">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="219417273403154" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="610931878474828" type="rubiloja">
+                            <param id="0" name="Text">Rubis</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="854900903334418" title="Estrelas">
+            <sub-events>
+                <event-group description="" sid="585320812788962" title="Fase1">
+                    <sub-events>
+                        <event-block sid="930412437668583">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="475289579659277" type="System">
+                                    <param id="0" name="Variable">EstrelaFase1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="172573447283529" type="bt1">
+                                    <param id="0" name="Animation">&quot;1E&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="377107260960286">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="991521246413123" type="System">
+                                    <param id="0" name="Variable">EstrelaFase1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="928859454171019" type="bt1">
+                                    <param id="0" name="Animation">&quot;2E&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="604793950607749">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="316452546929098" type="System">
+                                    <param id="0" name="Variable">EstrelaFase1</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="807098832116914" type="bt1">
+                                    <param id="0" name="Animation">&quot;3E&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="748262398080212" title="Fase2">
+                    <sub-events>
+                        <event-block sid="395678526192936">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="687388696167021" type="System">
+                                    <param id="0" name="Variable">EstrelaFase2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="656268052920568" type="System">
+                                    <param id="0" name="Variable">Fase1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="703170576750636" type="bt2">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="982207743048653">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="283033965998419" type="System">
+                                    <param id="0" name="Variable">EstrelaFase2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="539455259253879" type="System">
+                                    <param id="0" name="Variable">Fase1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="921378985075862" type="bt2">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="550126761117825">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="587824215644342" type="System">
+                                    <param id="0" name="Variable">EstrelaFase2</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="136761075053559" type="System">
+                                    <param id="0" name="Variable">Fase1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="807795825021752" type="bt2">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="852092140185380" title="Fase3">
+                    <sub-events>
+                        <event-block sid="282023664832837">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="879050363827071" type="System">
+                                    <param id="0" name="Variable">EstrelaFase3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="684989220629233" type="System">
+                                    <param id="0" name="Variable">Fase2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="703701557067411" type="bt3">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="394780690915078">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="280082169796431" type="System">
+                                    <param id="0" name="Variable">EstrelaFase3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="546325192497410" type="System">
+                                    <param id="0" name="Variable">Fase2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="969112320299908" type="bt3">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="207957257320815">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="949324081986696" type="System">
+                                    <param id="0" name="Variable">EstrelaFase3</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="244040469516525" type="System">
+                                    <param id="0" name="Variable">Fase2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="534475954531662" type="bt3">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="928185733909608" title="Fase4">
+                    <sub-events>
+                        <event-block sid="862721432497165">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="832418173169645" type="System">
+                                    <param id="0" name="Variable">EstrelaFase4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="650694422820798" type="System">
+                                    <param id="0" name="Variable">Fase3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="484713437465098" type="bt4">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="790940700577832">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="192164090384059" type="System">
+                                    <param id="0" name="Variable">Fase3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="414814668336135" type="System">
+                                    <param id="0" name="Variable">EstrelaFase4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="589182473368415" type="bt4">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="666215621398133">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="512405701501948" type="System">
+                                    <param id="0" name="Variable">Fase3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="916972900451971" type="System">
+                                    <param id="0" name="Variable">EstrelaFase4</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="537161966405360" type="bt4">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="820724699590981" title="Fase5">
+                    <sub-events>
+                        <event-block sid="350741640999619">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="668201817966307" type="System">
+                                    <param id="0" name="Variable">EstrelaFase5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="324440651239711" type="System">
+                                    <param id="0" name="Variable">Fase4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="874706275136365" type="bt5">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="940318048160792">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="201235423528720" type="System">
+                                    <param id="0" name="Variable">EstrelaFase5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="718401176208301" type="System">
+                                    <param id="0" name="Variable">Fase4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="417774573446938" type="bt5">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="814674420021964">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="530305721357093" type="System">
+                                    <param id="0" name="Variable">EstrelaFase5</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="664599935290210" type="System">
+                                    <param id="0" name="Variable">Fase4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="634853037210819" type="bt5">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="374359881609286" title="Fase6">
+                    <sub-events>
+                        <event-block sid="238767003385710">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="582527160253037" type="System">
+                                    <param id="0" name="Variable">EstrelaFase6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="806402764979543" type="System">
+                                    <param id="0" name="Variable">Fase5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="168852986756693" type="bt6">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="685500214077924">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="544513830107922" type="System">
+                                    <param id="0" name="Variable">EstrelaFase6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="464793232113855" type="System">
+                                    <param id="0" name="Variable">Fase5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="215143856523404" type="bt6">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="610480946356864">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="180626970719030" type="System">
+                                    <param id="0" name="Variable">EstrelaFase6</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="913959123521755" type="System">
+                                    <param id="0" name="Variable">Fase5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="277124844090736" type="bt6">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="440245572896989" title="Fase7">
+                    <sub-events>
+                        <event-block sid="880852034695835">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="166223002030097" type="System">
+                                    <param id="0" name="Variable">EstrelaFase7</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="985897229115056" type="System">
+                                    <param id="0" name="Variable">Fase6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="769095333299174" type="bt7">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="721006092105688">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="215969301760530" type="System">
+                                    <param id="0" name="Variable">EstrelaFase7</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="845190272959083" type="System">
+                                    <param id="0" name="Variable">Fase6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="117663838515927" type="bt7">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="373617461259195">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="802655343548814" type="System">
+                                    <param id="0" name="Variable">EstrelaFase7</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="412916332439094" type="System">
+                                    <param id="0" name="Variable">Fase6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="160948595133398" type="bt7">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="928725696137582" title="Fase8">
+                    <sub-events>
+                        <event-block sid="412292096480221">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="529381591100991" type="System">
+                                    <param id="0" name="Variable">EstrelaFase8</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="840678169385661" type="System">
+                                    <param id="0" name="Variable">Fase7</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="849775880672065" type="bt8">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="434045544003691">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="119103407493970" type="System">
+                                    <param id="0" name="Variable">EstrelaFase8</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="928437843914590" type="System">
+                                    <param id="0" name="Variable">Fase7</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="445940257184738" type="bt8">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="118864756600433">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="820134237025056" type="System">
+                                    <param id="0" name="Variable">EstrelaFase8</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="988781145023120" type="System">
+                                    <param id="0" name="Variable">Fase7</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="614567438982115" type="bt8">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="687857228734341" title="Fase9">
+                    <sub-events>
+                        <event-block sid="941847602448624">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="961937655920117" type="System">
+                                    <param id="0" name="Variable">EstrelaFase9</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="787525042754378" type="System">
+                                    <param id="0" name="Variable">Fase8</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="475676899887167" type="bt9">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="542490280868108">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="488653291542503" type="System">
+                                    <param id="0" name="Variable">EstrelaFase9</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="682315944340794" type="System">
+                                    <param id="0" name="Variable">Fase8</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="753705142280765" type="bt9">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="654187858838261">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="870584169622470" type="System">
+                                    <param id="0" name="Variable">EstrelaFase9</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="808773344065338" type="System">
+                                    <param id="0" name="Variable">Fase8</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="269033507911955" type="bt9">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="794009146209902" title="Fase10">
+                    <sub-events>
+                        <event-block sid="603338054543639">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="877671843455224" type="System">
+                                    <param id="0" name="Variable">EstrelaFase10</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="282202161719857" type="System">
+                                    <param id="0" name="Variable">Fase10</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="869307095388617" type="bt10">
+                                    <param id="0" name="Animation">&quot;e1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="525955054226390">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="121825707885517" type="System">
+                                    <param id="0" name="Variable">EstrelaFase10</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="119868455519518" type="System">
+                                    <param id="0" name="Variable">Fase10</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="790737213045566" type="bt10">
+                                    <param id="0" name="Animation">&quot;e2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="775137374236944">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="703681112130321" type="System">
+                                    <param id="0" name="Variable">EstrelaFase10</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="274428392239901" type="System">
+                                    <param id="0" name="Variable">Fase10</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="452194529223746" type="bt10">
+                                    <param id="0" name="Animation">&quot;e3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="804784978866312" title="Func Botões">
+            <sub-events>
+                <event-block sid="831185103599695">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="236034543757299" type="Touch">
+                            <param id="0" name="Object">fase1_func</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="694041794469551" type="System">
+                            <param id="0" name="Variable">Caverna</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="722458051992342" type="System">
+                            <param id="0" name="Variable">Fase_Atual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="703211982597597" type="System">
+                            <param id="0" name="Layout">FASE_1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="883701691964583">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="427892518725214" type="Touch">
+                            <param id="0" name="Object">Fase2_func</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="387798646286297" type="System">
+                            <param id="0" name="Variable">Fase1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="839367929846140" type="System">
+                            <param id="0" name="Variable">Caverna</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="553958859597256" type="System">
+                            <param id="0" name="Variable">Fase_Atual</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="713625658606262" type="System">
+                            <param id="0" name="Layout">FASE_2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="486486794336903">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="411064833784857" type="Touch">
+                            <param id="0" name="Object">fase3_func</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="694563002246558" type="System">
+                            <param id="0" name="Variable">Fase2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="378896252351662" type="System">
+                            <param id="0" name="Variable">Caverna</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="571251408630742" type="System">
+                            <param id="0" name="Variable">Fase_Atual</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="463541632029499" type="System">
+                            <param id="0" name="Layout">FASE_3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="891242412652208">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="780106264208173" type="Touch">
+                            <param id="0" name="Object">fase4_func</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="520666895357926" type="System">
+                            <param id="0" name="Variable">Fase3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="345163520451177" type="System">
+                            <param id="0" name="Variable">Caverna</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="992950954238612" type="System">
+                            <param id="0" name="Variable">Fase_Atual</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="500236797231110" type="System">
+                            <param id="0" name="Layout">FASE_4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="851088794831218">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="390597227042057" type="Touch">
+                            <param id="0" name="Object">fase5_func</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="388488999096724" type="System">
+                            <param id="0" name="Variable">Fase4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="552975585041963" type="System">
+                            <param id="0" name="Variable">Caverna</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="751066557602605" type="System">
+                            <param id="0" name="Variable">Fase_Atual</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="807592994608431" type="System">
+                            <param id="0" name="Layout">FASE_5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="912923498156918">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="910050637409583" type="Touch">
+                            <param id="0" name="Object">fase6_func</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="380765514816792" type="System">
+                            <param id="0" name="Variable">Fase5</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="552809117443036" type="System">
+                            <param id="0" name="Variable">Caverna</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="603444769586135" type="System">
+                            <param id="0" name="Variable">Fase_Atual</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="643102605847613" type="System">
+                            <param id="0" name="Layout">FASE_6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="459655989665192">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="235570561126469" type="Touch">
+                            <param id="0" name="Object">bt_loja_func</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="977109044920619" type="System">
+                            <param id="0" name="Layout">Loja</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="493497750960602" title="Setando Animação">
+            <sub-events>
+                <event-block sid="698688567299232">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="145982578705788" type="System">
+                            <param id="0" name="Variable">Fase1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="683256578157227" type="System">
+                            <param id="0" name="Variable">EstrelaFase2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="662104993776324" type="bt2">
+                            <param id="0" name="Animation">&quot;Disponivel&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="241167140321224">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="572259785373478" type="System">
+                            <param id="0" name="Variable">Fase2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="472781383394252" type="System">
+                            <param id="0" name="Variable">EstrelaFase3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="645254109581547" type="bt3">
+                            <param id="0" name="Animation">&quot;Disponivel&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="840720702839660">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="667525978288769" type="System">
+                            <param id="0" name="Variable">Fase3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="938613672507250" type="System">
+                            <param id="0" name="Variable">EstrelaFase4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="775504462517261" type="bt4">
+                            <param id="0" name="Animation">&quot;Disponivel&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="638404913948495">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="531380720755432" type="System">
+                            <param id="0" name="Variable">Fase4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="179062821791824" type="System">
+                            <param id="0" name="Variable">EstrelaFase5</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="392553702178690" type="bt5">
+                            <param id="0" name="Animation">&quot;Disponivel&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="927859535595067">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="920479555167483" type="System">
+                            <param id="0" name="Variable">Fase5</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="249715638367848" type="System">
+                            <param id="0" name="Variable">EstrelaFase6</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="822075000060160" type="bt6">
+                            <param id="0" name="Animation">&quot;Disponivel&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="749772046567722" title="Recompensa iLynna">
+            <sub-events>
+                <event-block sid="741428651601289">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="285704788440812" type="System">
+                            <param id="0" name="Variable">EstrelaFase1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="628533911686743" type="System">
+                            <param id="0" name="Variable">EstrelaFase2</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="644481673933312" type="System">
+                            <param id="0" name="Variable">EstrelaFase3</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="857086053263579" type="System">
+                            <param id="0" name="Variable">EstrelaFase4</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="711042318987383" type="System">
+                            <param id="0" name="Variable">EstrelaFase5</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="354006747977110" type="System">
+                            <param id="0" name="Variable">Recompensa</param>
+                            <param id="1" name="Value">456789123</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="478795660119340">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="223151440861402" type="Touch">
+                            <param id="0" name="Object">bt_creditos_func</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="350130672602517" type="System">
+                            <param id="0" name="Layout">Recompensa_iLynna</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

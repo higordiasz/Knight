@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Tela_InicialES</name>
+    <events>
+        <variable constant="0" name="AutoPlay" sid="999270360341151" static="0" type="number">1</variable>
+        <event-group description="" sid="911944419036987" title="Load Variaveis">
+            <sub-events>
+                <event-block sid="908600792040255">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="595097637003238" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Check item exists" sid="979027016925108" type="Save">
+                            <param id="0" name="Key">&quot;C1&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="117740691438162" type="Save">
+                            <param id="0" name="Key">&quot;C2&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="282333293911133" type="Save">
+                            <param id="0" name="Key">&quot;C3&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="698215843915715" type="Save">
+                            <param id="0" name="Key">&quot;Fase01&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="674058903204293" type="Save">
+                            <param id="0" name="Key">&quot;Fase02&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="870934526022103" type="Save">
+                            <param id="0" name="Key">&quot;Fase03&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="285224545708573" type="Save">
+                            <param id="0" name="Key">&quot;Fase04&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="535269157161447" type="Save">
+                            <param id="0" name="Key">&quot;EstrelaFase01&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="979124073979548" type="Save">
+                            <param id="0" name="Key">&quot;EstrelaFase02&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="261053904465351" type="Save">
+                            <param id="0" name="Key">&quot;EstrelaFase03&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="479689822349594" type="Save">
+                            <param id="0" name="Key">&quot;EstrelaFase04&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="982747208914448" type="Save">
+                            <param id="0" name="Key">&quot;Moedas&quot;</param>
+                        </action>
+                        <action id="5" name="Check item exists" sid="806898913238132" type="Save">
+                            <param id="0" name="Key">&quot;Rubis&quot;</param>
+                        </action>
+                        <action id="4" name="Load an interstitial" sid="654868773366026" type="AD">
+                            <param id="0" name="Overlap">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="711172981965856" title="C1">
+                    <sub-events>
+                        <event-block sid="875063912869191">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="569491013601864" type="Save">
+                                    <param id="0" name="Key">&quot;C1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="426577979792586" type="Save">
+                                    <param id="0" name="Key">&quot;C1&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="836600489609402">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="930770075455436" type="Save">
+                                    <param id="0" name="Key">&quot;C1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="222793455010804" type="System">
+                                    <param id="0" name="Variable">Nivel_Compra1</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="128655748566467" title="C2">
+                    <sub-events>
+                        <event-block sid="494936962109820">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="329759583822233" type="Save">
+                                    <param id="0" name="Key">&quot;C2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="173686690636989" type="Save">
+                                    <param id="0" name="Key">&quot;C2&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="282132402636479">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="629188809360349" type="Save">
+                                    <param id="0" name="Key">&quot;C2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="163468054894053" type="System">
+                                    <param id="0" name="Variable">Nivel_Compra2</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="673498337485747" title="C3">
+                    <sub-events>
+                        <event-block sid="346267540839673">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="887999485379819" type="Save">
+                                    <param id="0" name="Key">&quot;C3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="481668504601249" type="Save">
+                                    <param id="0" name="Key">&quot;C3&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="278943189088290">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="888803707272178" type="Save">
+                                    <param id="0" name="Key">&quot;C3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="494084470942280" type="System">
+                                    <param id="0" name="Variable">Nivel_Compra3</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="123722551928361" title="LoadFase01">
+                    <sub-events>
+                        <event-block sid="892508845451198">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="753105881357348" type="Save">
+                                    <param id="0" name="Key">&quot;Fase01&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="889375092114990" type="Save">
+                                    <param id="0" name="Key">&quot;Fase01&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="654169945427755">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="618167054376836" type="Save">
+                                    <param id="0" name="Key">&quot;Fase01&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="733518034497631" type="System">
+                                    <param id="0" name="Variable">Fase1</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="425894016953105" title="LoadFase2">
+                    <sub-events>
+                        <event-block sid="412397415882201">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="446940554591864" type="Save">
+                                    <param id="0" name="Key">&quot;Fase02&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="138873728181703" type="Save">
+                                    <param id="0" name="Key">&quot;Fase02&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="953092314533386">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="188239277317741" type="Save">
+                                    <param id="0" name="Key">&quot;Fase02&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="762298183150640" type="System">
+                                    <param id="0" name="Variable">Fase2</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="995387685807995" title="LoadFase3">
+                    <sub-events>
+                        <event-block sid="517167604001501">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="152136202762844" type="Save">
+                                    <param id="0" name="Key">&quot;Fase03&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="443560549833343" type="Save">
+                                    <param id="0" name="Key">&quot;Fase03&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="283894659617695">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="127880139255534" type="Save">
+                                    <param id="0" name="Key">&quot;Fase03&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="627093424964011" type="System">
+                                    <param id="0" name="Variable">Fase3</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="416238077811526" title="LoadFase4">
+                    <sub-events>
+                        <event-block sid="930960897892750">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="439313737319626" type="Save">
+                                    <param id="0" name="Key">&quot;Fase04&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="148878035940851" type="Save">
+                                    <param id="0" name="Key">&quot;Fase04&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="441771596673920">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="272163907910829" type="Save">
+                                    <param id="0" name="Key">&quot;Fase04&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="205288803879125" type="System">
+                                    <param id="0" name="Variable">Fase4</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="423651577877534" title="LoadEstrelaFase01">
+                    <sub-events>
+                        <event-block sid="216149187486382">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="465379245798676" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase01&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="807711876520764" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase01&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="695622367966849">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="585098663508572" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase01&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="752269699836950" type="System">
+                                    <param id="0" name="Variable">EstrelaFase1</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="817831146919888" title="LoadEstrelaFase2">
+                    <sub-events>
+                        <event-block sid="217715996504562">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="729375673250380" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase02&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="159808288795988" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase02&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="923250123898849">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="722771946699250" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase02&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="104549315901368" type="System">
+                                    <param id="0" name="Variable">EstrelaFase2</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="132507336034289" title="LoadEstrelaFase3">
+                    <sub-events>
+                        <event-block sid="760757940035570">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="601637590944687" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase03&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="532809834471781" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase03&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="681633997080066">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="856814183910588" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase03&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="265481790250736" type="System">
+                                    <param id="0" name="Variable">EstrelaFase3</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="741732869591657" title="LoadEstrelaFase4">
+                    <sub-events>
+                        <event-block sid="624099439678153">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="829638961004539" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase04&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="469119756924997" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase04&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="680031275016549">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="797940191864047" type="Save">
+                                    <param id="0" name="Key">&quot;EstrelaFase04&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="414577806049313" type="System">
+                                    <param id="0" name="Variable">EstrelaFase4</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="794236544416387" title="LoadMoedas">
+                    <sub-events>
+                        <event-block sid="122276518699251">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="538666290190859" type="Save">
+                                    <param id="0" name="Key">&quot;Moedas&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="211585867029474" type="Save">
+                                    <param id="0" name="Key">&quot;Moedas&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="524188445722113">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="505437338070442" type="Save">
+                                    <param id="0" name="Key">&quot;Moedas&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="492137779369419" type="System">
+                                    <param id="0" name="Variable">Moedas</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="303114322426278" title="LoadRubis">
+                    <sub-events>
+                        <event-block sid="688082059936804">
+                            <conditions>
+                                <condition id="9" name="On item exists" sid="734334642461828" type="Save">
+                                    <param id="0" name="Key">&quot;Rubis&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Get item" sid="894633806405454" type="Save">
+                                    <param id="0" name="Key">&quot;Rubis&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="693673394477839">
+                            <conditions>
+                                <condition id="1" name="On item get" sid="740030463179872" type="Save">
+                                    <param id="0" name="Key">&quot;Rubis&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="180072852514181" type="System">
+                                    <param id="0" name="Variable">Rubis</param>
+                                    <param id="1" name="Value">Save.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="246390829721643">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="452236771217145" type="Touch">
+                            <param id="0" name="Object">bt_start_func</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="876267395717257" type="System">
+                            <param id="0" name="Layout">Tela_Fases</param>
+                        </action>
+                        <action id="1" name="Get item" sid="513397119567193" type="Save">
+                            <param id="0" name="Key">&quot;Fase01&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="809082639761647">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="772651513787350" type="System">
+                    <param id="0" name="Variable">AutoPlay</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="163223450082399" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="266083373413308">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="241331435246912" type="Player">
+                    <param id="0" name="Object">AP_Pulo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="237055844138039" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="402076679909851">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="956775100443594" type="Player">
+                    <param id="0" name="Object">AP_Stop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="530915361666555" type="System">
+                    <param id="0" name="Variable">AutoPlay</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="493414298083523">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="801096577750714" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="501450261003488" type="Player">
+                    <param id="0" name="Animation">&quot;StandBy&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="218944945946434">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="161973505517948" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="664894625406265" type="Player">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="996444957957177">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="553138744975077" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="396742661498971" type="Player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="210678417419718">
+            <conditions>
+                <condition behavior="Platform" id="6" name="On fall" sid="316136829436190" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="648441107583354" type="Player">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="487250281624062">
+            <conditions>
+                <condition behavior="Platform" id="1" name="Compare speed" sid="850523461091792" type="Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+                <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="692524595364839" type="Player" />
+                <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="806454277002428" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="174242028790225" type="Player">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="358833803642455">
+            <conditions>
+                <condition behavior="Platform" id="1" name="Compare speed" sid="542779996459628" type="Player">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+                <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="333768630520412" type="Player" />
+                <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="275215892521050" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="631020322880634" type="Player">
+                    <param id="0" name="Animation">&quot;StandBy&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
